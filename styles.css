@@ -1,24 +1,39 @@
 * {
     margin: 0;
     padding: 0;
+    background-color: black;
+    font-family: Roboto Mono;
 }
 
-.container {
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
+    width: 100%;
 }
 
-.numDisplay {
+#numDisplay {
     background-color: rgb(217, 193, 164);
     border: none;
-    width: 20.5%;
     padding: 20px;
+    width: 19%;
 }
 
-.number-container {
+#number-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -26,7 +41,7 @@
     padding: 10px;
 }
 
-.item {
+#item {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,7 +54,37 @@
     border: hidden;
 }
 
+#item:hover {
+    opacity: 0.7;
+    border-color: #ff0000;
+    box-shadow:0 0 10px #ff0000;
+}
+
 .equal {
-    height: 150%;
+    height: 190%;
     background-color: rgb(220, 159, 27);
+}
+
+.on {
+    background-color: rgb(248, 152, 36);
+}
+
+.plus {
+    background-color: rgb(232, 167, 88);
+}
+
+.minus {
+    background-color: rgb(231, 189, 62);
+}
+
+.multiply {
+    background-color: rgb(250, 209, 104);
+}
+
+.divide {
+    background-color: rgb(229, 175, 113) ;
+}
+
+.clear {
+    background-color: rgb(255, 132, 0);
 }
