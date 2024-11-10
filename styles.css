@@ -26,7 +26,7 @@ h1 {
     width: 100%;
 }
 
-#numDisplay {
+input {
     background-color: rgb(217, 193, 164);
     border: none;
     padding: 20px;
